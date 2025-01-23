@@ -1,4 +1,6 @@
-﻿ namespace exx09
+﻿using System.ComponentModel.Design;
+
+namespace exx09
 {
     internal class Program
     {
@@ -13,6 +15,31 @@
 
             Console.Write("Digite o valor do lado C: ");
             ladoC = Convert.ToInt32(Console.ReadLine());
+
+            if ((ladoA < ladoB + ladoC) && (ladoB < ladoA + ladoC) && (ladoC < ladoA + ladoB))
+
+            {
+                Console.WriteLine("Os valores informados formam um triângulo.");
+                if ((ladoA == ladoB) && (ladoB == ladoC))
+
+                {
+                    Console.WriteLine("Ele é um triângulo equilátero.");
+                }
+
+                else if ((ladoA == ladoB) || (ladoA == ladoC) || (ladoB == ladoC))
+                {
+                    Console.WriteLine("Ele é um triângulo isósceles.");
+                }
+                else
+                {
+                    Console.WriteLine("Ele é um triângulo escaleno.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Os valores informados não formam um triângulo.");
+            }
+
         }
     }
-}
+    }
