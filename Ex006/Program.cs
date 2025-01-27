@@ -1,10 +1,10 @@
-﻿namespace Ex004
+﻿namespace Ex006
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-        }
+            int num1
+                convert.
     }
 }
